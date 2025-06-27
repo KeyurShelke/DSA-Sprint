@@ -1,0 +1,32 @@
+
+Challenge
+Write a C++ program that:
+1. Reads an integer N from standard input (the number of measurements).
+2. Reads N space-separated integers, each representing the height of a mountain or valley.
+3. Prints the maximum height on the first line and the minimum height on the second line.
+Input
+• The first line contains a single integer N — the number of measurements.
+• The second line contains N space-separated integers, the heights (which may be negative, zero, or positive).
+Output
+Print two lines:
+• First line: the maximum value among the heights
+• Second line: the minimum value among the heights
+Note: Print exactly as specified: one value per line for the maximum and minimum with
+no extra space or newline at the end.
+
+
+** Solution **
+
+Reads N from input.
+
+Reads N space-separated heights into a vector.
+
+Initializes maxVal and minVal to the first height.
+
+Loops through the rest to find:
+
+maxVal: the largest height
+
+minVal: the smallest height
+
+Prints maxVal and minVal on separate lines, with no extra space or newline at the end, as required.
