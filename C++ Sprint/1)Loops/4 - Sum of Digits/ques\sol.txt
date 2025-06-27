@@ -1,0 +1,28 @@
+
+Problem Statement:
+Write a program that takes a non-negative integer as input and calculates the sum of its digits using a while loop.
+Input:
+A single non-negative integer n (0 ≤ n ≤ 1,000,000,000)
+Output:
+—
+A single integer - the sum of the digits of n.
+Example:
+Input:
+12345
+Output: 15
+Explanation:
+The digits are 1, 2, 3, 4, and 5. Their sum is 1+ 2+ 3+ 4+ 5 = 15.
+Additional Notes:
+• You should use a while loop to extract and sum the digits. • Do not use built-in functions like sum() on strings or arrays.
+
+** Solution **
+
+🔢 Step-by-step:
+Let’s say the input is 12345.
+
+Step	n	     digit = n % 10	    sum	    n = n / 10
+1	    12345	 5	                5	    1234
+2	    1234	 4	                9	    123
+3	    123	     3	                12	    12
+4	    12	     2	                14	    1
+5	    1	     1	                15	    0
