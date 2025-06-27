@@ -1,0 +1,34 @@
+
+Challenge
+Write a C++ program that:
+1. Reads two integers, K and S, from standard input.
+2. Counts and prints the number of valid integer triples (X, Y, Z) that satisfy the above conditions.
+Input
+A single line containing two integers, K and S.
+Output
+A single integer: the number of valid combinations with no extra space or newline at the end.
+Example
+Input
+22
+Output
+6
+
+** Solution **
+
+🔍 Explanation:
+🧠 Problem Breakdown:
+You need to find how many combinations of 
+(X,Y,Z)
+(X,Y,Z) exist such that their sum is exactly S and all values are within range 0 to K.
+
+🔁 Nested Loop Logic:
+Loop through all possible values of X and Y from 0 to K.
+
+Compute Z = S - X - Y.
+
+Check if Z is in the range 0 to K.
+
+If yes → valid combination → increment count.
+
+⚠️ Output Format:
+Print only the number (no extra space or newline at the end), as required.
