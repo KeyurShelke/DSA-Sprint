@@ -1,0 +1,38 @@
+
+Write a C++ program that:
+1. Reads an integer N (number of residents) from standard input. 2. Reads N space-separated integers (the energy levels).
+3. Prints four lines as follows:
+Input
+- First line: "Even: X", where X is the count of even numbers.
+- Second line: "Odd: X", where X is the count of odd numbers.
+- Third line: "Positive: X", where X is the count of positive numbers (strictly greater than zero).
+- Fourth line: "Negative: X", where X is the count of negative numbers (strictly less than zero).
+• The first line contains a single integer N - the number of values.
+The second line contains N space-separated integers - the energy levels.
+Output
+Print four lines in the specified format:
+Even: X
+Odd: Y
+Positive: Z
+Negative: W
+where X, Y, Z, and W are the respective counts.
+Note: Print output in the exact format as shown, one category per line with no extra space or newline at the end.
+
+
+** Solution **
+
+📌 Input:
+First line: Number of residents N
+
+Second line: N space-separated integers representing their energy levels
+
+📌 Logic:
+Loop through each energy value:
+
+evenCount: Increment if number % 2 == 0
+
+oddCount: Increment if number % 2 != 0
+
+positiveCount: Increment if number > 0
+
+negativeCount: Increment if number < 0
