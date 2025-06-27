@@ -1,0 +1,96 @@
+Problem Statement:
+Write a program that takes a non-negative decimal (base-10) integer as input and converts it to its binary (base-2) representation using a while loop.
+―
+You must build the binary representation manually – do not use built-in conversion functions (like bin() in Python).
+Input:
+A single non-negative integer n (0 ≤ n ≤ 1,000,000)
+Output:
+A string representing the binary form of the input number.
+Examples:
+Input:
+5
+Output: 101
+
+
+** Solution **
+
+
+We repeatedly:
+
+Divide the number by 2
+
+Record the remainder (0 or 1)
+
+Prepend it to a string (since binary digits are calculated in reverse)
+
+
+Steps:
+Step	n	n % 2	Binary (built backward)
+1	    5	1	    "1"
+2	    2	0	    "01"
+3	    1	1	    "101"
+4	    0	—	    -
+
+⚠️ Edge Case:
+If the input is 0, we directly print 0 since the loop won’t run.
+
+
+
+🔢 Problem:
+Convert a non-negative integer (like 5) into its binary representation (like 101) using only a while loop, no built-in functions, and no strings-to-binary tricks.
+
+📘 Binary Basics:
+Binary is base-2, so each digit is either 0 or 1.
+
+To convert a decimal to binary:
+
+Divide the number by 2
+
+Store the remainder
+
+Keep dividing the result until the number becomes 0
+
+The binary is the reversed order of remainders
+
+✅ Example: Convert 5 to binary
+Step-by-step math:
+5 ÷ 2 = 2 remainder 1   ← Least significant bit (LSB)
+2 ÷ 2 = 1 remainder 0
+1 ÷ 2 = 0 remainder 1   ← Most significant bit (MSB)
+Now collect the remainders bottom-up: 1 0 1
+
+→ So, binary of 5 is 101
+
+
+{string binary = "";}
+We create a string to store our binary number (as characters '0' or '1').
+
+
+{    while (n > 0) {
+        int remainder = n % 2;
+        binary = char(remainder + '0') + binary;
+        n = n / 2;
+    }
+}
+Let’s break this part down:s
+🧩 n % 2:
+Gets the last bit (remainder when dividing by 2)
+
+Will always be 0 or 1
+
+🧩 char(remainder + '0'):
+Converts 0 or 1 to a character
+
+'0' has ASCII value 48, so:
+
+0 + '0' = '0'
+
+1 + '0' = '1'
+
+🧩 binary = ... + binary:
+We prepend each new bit at the front
+
+Because the first remainder is the last bit, and so on
+
+🧩 n = n / 2:
+We reduce n for the next step

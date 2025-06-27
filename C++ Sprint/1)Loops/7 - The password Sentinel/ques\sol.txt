@@ -1,0 +1,51 @@
+Challenge
+Write a C++ program that:
+• Reads an integer n (the number of password attempts) from standard input.
+• Reads n space-separated integers (the password attempts).
+•
+Prints Access Granted the moment 2025 is found among the inputs, and stops checking further passwords.
+If 2025 is never present, prints Access Denied.
+Note: Solve the problem using Do-While loop.
+Input
+First line: a single integer n - the number of password attempts.
+Second line: n space-separated integers.
+Output
+A single line:
+Access Granted if 2025 appeared as any of the password attempts (print only once, for the first match).
+Otherwise, print Access Denied.
+Note: Don't print any extra space or newline at the end.
+Example 1
+Input
+5
+1111 2023 9999 123 2025
+Output
+Access Granted
+
+
+
+
+** Solution **
+
+Step-by-step:
+cin >> n;
+
+Read the number of password attempts.
+
+do { ... } while (count < n);
+
+We use a do-while to ensure the loop runs at least once, and keeps running until all n attempts are processed.
+
+cin >> attempt;
+
+Read one password attempt.
+
+if (attempt == 2025)
+
+If the attempt is 2025, we set granted = true and break the loop immediately. No further attempts are checked.
+
+After the loop
+
+If granted is true → print Access Granted
+
+Otherwise → print Access Denied
+
