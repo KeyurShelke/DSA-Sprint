@@ -1,0 +1,39 @@
+
+Problem Statement
+Anirudh runs a popular snack stall in his neighborhood. He has a special menu for his regular customers:
+1. Samosa
+2. Kachori
+3. Jalebi
+4. Chai
+Customers place their orders by entering the item number. Anirudh must create a program that will print the name of the item for each valid number entered, or say `Invalid choice` for any other number.
+Challenge
+Write a C++ program that:
+• Reads an integer from standard input, representing the menu item code.
+• Uses a switch-case statement to print the name of the snack. If the code does not match any snack, print `Invalid choice`.
+Input
+A single integer representing the menu item code.
+Output
+Print the name of the snack corresponding to the code. If the code is invalid, print `Invalid choice`.
+Note: Don't print any extra space or newline at the end.
+
+Explanation
+📥 Input:
+One integer code, which represents the item number ordered.
+
+🔁 Logic:
+Use a switch-case to match the item number:
+
+1 → "Samosa"
+
+2 → "Kachori"
+
+3 → "Jalebi"
+
+4 → "Chai"
+
+If the number is not 1–4, the default case runs, printing "Invalid choice".
+
+⚠️ Important Notes:
+We use break to stop the switch from falling through.
+
+There's no extra space or newline at the end, as required.
