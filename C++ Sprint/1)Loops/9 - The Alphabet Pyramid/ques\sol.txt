@@ -1,0 +1,37 @@
+
+Challenge
+Write a C++ program that:
+• Reads an integer N from standard input.
+• Prints N rows, where the ith row contains the first i capital English letters (from 'A' onward), each row on a new line.
+Input
+A single integer N.
+Output
+Print N rows of the alphabet pattern, as described. Each row i should contain the capital letters from 'A' to the ith letter.
+Note: Don't print any space or extra line at the end.
+Example
+Input
+5
+Output
+A
+AB
+ABC
+ABCD
+ABCDE
+
+ Explanation:
+📥 Input:
+One integer N → number of rows.
+
+🧠 Logic:
+Outer loop runs i from 1 to N (for each row).
+
+Inner loop prints characters from 'A' to 'A' + i - 1:
+
+For i = 1 → prints A
+
+For i = 2 → prints AB
+
+...
+
+After each row, print a newline, except after the last row (to match the “no extra line” rule).
+
