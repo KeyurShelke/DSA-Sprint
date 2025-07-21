@@ -1,0 +1,50 @@
+Problem Statement
+Hitesh has discovered an ancient scroll that describes a way to create magical grid patterns. The grid is built using two characters: the asterisk * and the dot.. Every third row and third column must be a line of asterisks, while the remaining cells contain repeating segments that start with *, followed by two dots.
+Hitesh wants your help to generate such a grid for given dimensions.
+Challenge
+Write a C++ program that:
+Reads two integers, N and M, from standard input.
+•
+Prints a grid with the pattern as described:
+• The grid must have N × 3 + 1 rows and M × 3+1 columns.
+•
+Every third row (0, 3, 6, ...) must be filled entirely with * characters.
+• For other rows, print *.. (an asterisk followed by two dots) repeated M times, ending with a end of the row.
+Input
+A single line containing two integers: N and M.
+Output
+Print the grid pattern as specified.
+Note: Don't print any extra space or newline at the end.
+Example
+Input
+34
+
+
+Output
+*
+* .*..*
+*..*
+*
+.*..*.
+*
+.*..*..*
+Constraints
+1 ≤N, M≤ 10
+
+
+✅ Problem Breakdown:
+Given:
+
+Two integers: N and M.
+
+Total number of rows = N * 3 + 1
+
+Total number of columns = M * 3 + 1
+
+🧠 Rules:
+Every 3rd row (i.e. row indices 0, 3, 6, …) is entirely made of *.
+
+Every other row is made of repeating segment "*.." (M times), ending the row.
+
+No extra spaces or blank lines at the end.
+
