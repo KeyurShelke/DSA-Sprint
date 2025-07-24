@@ -1,0 +1,23 @@
+
+Alex has learned how to find the largest element in an array, but now wants to take it a step further. Alex wants to write a program that can find the second largest number in a list of integers entered by the user. The program should work for any number of inputs and assume that at least two distinct numbers are provided. Your task is to help Alex build this program.
+Instructions:
+1. Take an integer N as input, representing the number of elements in the array.
+2. Read N space-separated integers as array elements.
+3. Find and print the second largest unique element in the array.
+Note: Don't add any newline or space after the output
+Input Format:
+N representing the Size of array Next line N space separated integers
+Output Format:
+secondMaximum
+Sample Input:
+5
+1 2 8 9 5
+Sample Output:
+8
+
+📌 Logic:
+first stores the largest element.
+
+second tracks the second largest but only if it's different from the largest.
+
+Uses INT_MIN from <climits> to handle negative numbers.
