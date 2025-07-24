@@ -1,0 +1,27 @@
+
+Alex is expanding their knowledge of arrays and wants to understand how to classify numbers. After
+learning about even and odd numbers, Alex decides to write a program that counts how many even and odd numbers are present in a list entered by the user. Alex also wants the program to work for any number of elements the user chooses. Your task is to help Alex implement this.
+Instructions:
+1. Take the size of the array, N, as input.
+2. Accept N space-separated integers as elements of the array.
+3. Count how many of those numbers are even and how many are odd.
+4. Print the counts.
+Input Format:
+An integer N
+N space-separated integers
+Output Format:
+evenCount
+Sample Input:
+6
+<space> oddCount
+4 7 2 9 1 8
+Sample Output:
+33
+Note: Do not print any additional text or newline or space after the output.
+
+📌 Explanation:
+evenCount: Increments when num % 2 == 0
+
+oddCount: Increments otherwise
+
+Final output is exactly evenCount followed by oddCount (like 33) without space or newline.
