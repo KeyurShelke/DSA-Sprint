@@ -1,0 +1,26 @@
+
+Alex is learning programming and is curious about how arrays work. One day, Alex decides to write a program that helps calculate the maximum number from a list of values entered by the user. However, Alex wants the program to be flexible, allowing users to decide how many numbers they want to enter. Your task is to help Alex build this program.
+Instructions:
+1. Take the size of the array, N, as input.
+2. Dynamically create an integer array of size N.
+3. Take input of N space-separated integers. 4. Find and print the maximum element in the array.
+Input Format :
+N representing the size the array
+Next line N space separated integers
+5
+8 652 3
+Output Format :
+8
+Note: Don't Add any new Line or space after the output
+Hint 1
+Assume the maximum element to be the first element of array then compare it with the rest of array elements
+
+
+🧠 How it Works:
+Takes size N.
+
+Reads N space-separated integers into the array.
+
+Assumes arr[0] is max, then compares with remaining values.
+
+Prints only the maximum without any extra space or newline.
