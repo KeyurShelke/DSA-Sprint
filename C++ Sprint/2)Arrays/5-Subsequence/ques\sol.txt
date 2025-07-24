@@ -1,0 +1,82 @@
+
+Challenge
+Write a C++ program that:
+Reads two integers N and M from standard input denoting the lengths of arrays A and B.
+• Reads array A of length N.
+• Reads array B of length M.
+•
+Prints "YES" if B is a subsequence of A, otherwise prints "NO".
+Input
+The first line contains two integers N and M.
+The second line contains N space-separated integers - the elements of A.
+The third line contains M space-separated integers - the elements of B.
+Output
+Print "YES" if B is a subsequence of A, otherwise print "NO" without quotes. Note: Don't print any extra space or newline at the end.
+Example:
+Input
+32
+147
+17
+Output
+YES
+Input
+
+
+✅ Goal:
+Check if array B is a subsequence of array A.
+
+A subsequence means that all elements of B appear in A in the same order, but not necessarily consecutively.
+
+🧠 Approach:
+Use two pointers:
+One for array A (i) and one for array B (j).
+
+Move through array A.
+If A[i] == B[j], then move both pointers forward.
+Else, move only i.
+
+If we reach the end of B (j == M), then B is a subsequence.
+
+✅ Problem Summary
+You are given two arrays:
+
+Array A of size N
+
+Array B of size M
+
+You have to check:
+
+Is B a subsequence of A?
+
+🎯 What does that mean?
+We want to check whether all elements of B appear in A in the same order, though not necessarily consecutively.
+
+🧠 Approach (Using Two Pointers)
+We use two pointers:
+
+i for array A
+
+j for array B
+
+We scan A, and whenever we find that A[i] == B[j], we move j forward.
+
+If we reach the end of B, it means we found the entire sequence, so B is a subsequence of A.
+
+👣 Step-by-Step Example
+Input:
+
+
+A = [1, 4, 7]
+B = [1, 7]
+Start with i=0 (A[0]=1), j=0 (B[0]=1)
+→ A[i] == B[j] → move j → j = 1
+
+Next i=1 (A[1]=4), B[1]=7 → not equal → skip
+
+Next i=2 (A[2]=7), B[1]=7 → equal → move j → j = 2
+
+Now j == M → we found full B inside A in order ⇒ print "YES"
+
+❌ When would it print "NO"?
+If any element of B doesn’t appear in order in A.
+
